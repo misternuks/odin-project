@@ -2,3 +2,24 @@ img {
   width: 400px;
   height: auto;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.recipe_link {
+  background-color: #666;
+  padding: 4px;
+  margin: 2px;
+  width: 16rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #DFF
+}
