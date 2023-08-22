@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+h1, h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header, .banner {
+  color: #f9faf8;
+  background-color: #1f2937;
+  padding: 16px 128px;
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.banner {
+  padding-bottom: 64px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-info p {
+  color: #E5E7EB;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 128px;
+  background-color: #E5E7EB;
+  color: #1F2937;
+}
+
+
+
+/* Colors
+#1F2937 = dark background color / dark text
+#F9FAF8 = white text
+#E5E7EB = light gray backgound / secondary text */
