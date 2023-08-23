@@ -7,6 +7,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 16px;
+  margin: 0px;
 }
 
 h1, h3 {
@@ -15,38 +16,113 @@ h1, h3 {
 }
 
 .header, .banner {
-  color: #f9faf8;
   background-color: #1f2937;
   padding: 16px 128px;
   display: flex;
+  gap: 16px;
+  padding-bottom: 64px;
 }
 
 .header {
   justify-content: space-between;
 }
 
-.banner {
-  padding-bottom: 64px;
+.banner, .sign-up, .card-title {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.banner-info p {
-  color: #E5E7EB;
 }
 
 .banner-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 128px;
+  width: 800px;
+  height: 176px;
   background-color: #E5E7EB;
   color: #1F2937;
 }
 
+.sign-up-button {
+  padding: 8px 32px;
+  border: 0px;
+  border-radius: 8px;
+  background-color: #3882F6;
+  font-weight: bold;
+  width: 8rem;
+}
 
+.card-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 0px;
+  padding: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 64px;
+}
+
+.card {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card-image {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #3882F6;
+  border-radius: 8px;
+}
+
+p {
+  padding: 8px 0px;
+  margin: 0px;
+}
+
+.quote {
+  padding: 64px 128px;
+  background-color: #E5E7EB;
+  color: #1F2937;
+  font-size: 24px;
+  font-style: italic;
+  }
+
+.sign-up {
+  margin: 64px 128px;
+  padding: 16px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3882F6;
+  border-radius: 8px;
+
+}
+
+.sign-up .sign-up-button {
+  border: 1px solid #F9FAF8;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+  padding: 16px;
+  margin: 0px;
+}
+
+.footer, .sign-up, .sign-up-button, .banner-info p, .header, .banner {
+  color: #E5E7EB;
+}
 /* Colors
 #1F2937 = dark background color / dark text
 #F9FAF8 = white text
-#E5E7EB = light gray backgound / secondary text */
+#E5E7EB = light gray backgound / secondary text
+#3882F6 = sign up color */
