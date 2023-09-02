@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Odin Project - Foundations - JavaScript: Fundamentals 3</title>
+</head>
+<body>
+  <script>
+
+    function testFunction () {
+      alert("Yo what up");
+    }
+
+    function greetUser(name = "Matthew") {
+      console.log(`Yo what up, ${name}.`);
+    }
+
+    function add7(number) {
+      console.log(number + 7);
+    }
+
+    function multiply(num1, num2) {
+      console.log(num1 * num2);
+    }
+
+    function capitalize(string) {
+      return string[0].toUpperCase() + string.slice(1).toLowerCase();
+    }
+
+    function lastLetter(string) {
+      return string.slice(-1);
+    }
+
+  </script>
+</body>
+</html>
