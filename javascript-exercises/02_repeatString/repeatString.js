@@ -1,9 +1,5 @@
 const repeatString = function(string, num) {
-  if(num >= 0) {
-    return string.repeat(num);
-  } else {
-    return 'ERROR'
-  }
+  return num >= 0 ? string.repeat(num) : "ERROR";
 };
 
 // Do not edit below this line
