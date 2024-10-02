@@ -8,21 +8,23 @@
 <body>
   <script>
 
-    function testFunction () {
-      alert("Yo what up");
+    function greetUser(name = "Matthew") {
+      return (`Yo what up, ${name}?`);
     }
 
-    function greetUser(name = "Matthew") {
-      console.log(`Yo what up, ${name}.`);
-    }
+    let fatArrowGreetUser = (nameAgain = "Matthew") => `Yo what up, ${nameAgain}?!`;
 
     function add7(number) {
-      console.log(number + 7);
+      return (number + 7);
     }
 
+    const fatArrowAdd7 = n => n + 7;
+
     function multiply(num1, num2) {
-      console.log(num1 * num2);
+      return (num1 * num2);
     }
+
+    let fatArrowMultiply = (n1, n2) => n1 * n2;
 
     function capitalize(string) {
       return string[0].toUpperCase() + string.slice(1).toLowerCase();
@@ -31,6 +33,18 @@
     function lastLetter(string) {
       return string.slice(-1);
     }
+
+    alert(greetUser());
+    alert(fatArrowGreetUser());
+    numberOne = 14;
+    numberTwo = 10;
+    alert(`7 plus ${numberOne} is ${add7(numberOne)}`);
+    alert(fatArrowAdd7(numberOne));
+    alert(`${numberOne} times ${numberTwo} is ${multiply(numberOne, numberTwo)}`);
+    alert(fatArrowMultiply(numberOne, numberTwo));
+    testString = "I Am a Test String!"
+    alert(capitalize(testString));
+    alert(lastLetter(testString));
 
   </script>
 </body>
